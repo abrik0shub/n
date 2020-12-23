@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fon2"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gradient2"/>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="65dp"
+            android:background="#ffff">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/user"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <LinearLayout
+                android:layout_width="2dp"
+                android:layout_height="65dp"
+                android:background="#BFBABA"
+                android:layout_marginLeft="20dp">
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:inputType="textNoSuggestions"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/usern"
+                android:hint="Ivanov.I"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffff">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/zamok"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="21dp"/>
+            <LinearLayout
+                android:layout_width="2dp"
+                android:layout_height="65dp"
+                android:background="#BFBABA"
+                android:layout_marginLeft="20dp">
+            </LinearLayout>
+            <EditText
+                android:layout_width="200dp"
+                android:id="@+id/passw"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:inputType="textPassword"
+                android:hint="••••••"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:hint="Forgot Password?">
+    </TextView>
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="65dp"
+        android:background="#3F51B5"
+        android:layout_gravity="center"
+        android:layout_marginTop="190dp"
+        android:text="SIGN IN"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:onClick="clc">
+    </Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Create A New Account?"
+        android:layout_gravity="center"
+        android:onClick="toSignUp"
+        android:layout_marginTop="320dp">
+    </TextView>
+</FrameLayout>
